@@ -1,7 +1,7 @@
 [onlinegdb编译器](https://www.onlinegdb.com/online_c_compiler)
 
 
-'''C
+```C
 #include <stdio.h>
 int main()
 {
@@ -11,4 +11,3 @@ int main()
      printf("%d",a);
      return 0;
 }
-'''
