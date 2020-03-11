@@ -6,7 +6,7 @@ int main( )
 {
 srand(time(0));
 
-int number=rand()%100+1;
+int number=rand()%100+1;//生成一个100以内的数
 
 int n=0;
 
