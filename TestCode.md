@@ -6,9 +6,12 @@
 #include <stdio.h>
 int main()
 {
-     int a;
+     int a,b,c;
      scanf("%d",&a);
+     scanf("%d",&b);
+     scanf("%d\n",&c);
      printf("测试代码");
-     printf("%d",a);
+     printf("%d %d\n%d",a,b,c);
      return 0;
 }
+```
