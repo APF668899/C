@@ -19,7 +19,7 @@ main(){
 k=1;
 while (--k)  k=10;
   a)  10次   b)  无限次  c)  一次也不执行  d)  1次
-  
+k=1;  while (--k)  k=10;//无限次
 #include"stdio.h"
 main(){  
 	int k=1;
@@ -33,7 +33,7 @@ main(){
 3、有以下程序段，其中x为整型变量，以下选项中叙述正确
 的是：（b ）
 x=0;
-while (!x!=0)  x++;  x!=0false   true
+while (!x!=0)  x++; 
   a)  退出while循环后，x的值为0
   b)  退出while循环后，x的值为1
   c)  while的控制表达式是非法的
