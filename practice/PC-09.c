@@ -110,11 +110,12 @@ main(){
     int x=3,y=0;
     do{ 
         printf("\n%d %d---",x,y);   
-        while(!y){//1,2,3,4
+        while(!y){//1,
             printf("%d %d",x,y);   
-            y=-x;//-3,-2,2,-1 
+            y=-x;//-3, 
         }
-    }while(x--);//3,-2,2  
+    }while(x--);  
     printf("\n最终%d,%d\n",x,y);
 }
+
 
