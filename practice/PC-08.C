@@ -45,20 +45,21 @@ main(){
     printf("%d,%d",y,x);
 }
 程序的输出结果是：（ a）
-  a)  0,5       b)  1,5       c)  0,4       d)   1,4
+  a)  0,5       b)  1,5       c)  0,4       d) 
 
-	
+ 解析：	
 #include"stdio.h"
 main(){
     int x=0,y=0,i=1;
     while(++y && x<5){
-		printf("第%d次进入循环,%d,%d---",i,y,x);
+		printf("第%d次进入循环,%d,%d\n",i,y,x);
 		y--;
 		x++;
 		i++;
 	}
     printf("%d,%d",y,x);
 }
+
 
 4、有以下程序： 
 #include"stdio.h"
@@ -78,11 +79,11 @@ main(){
 5、有以下程序： 
 #include"stdio.h"
 main(){  
-	int x=3,i=1;
+    int x=3,i=1;
     do{ 
        printf("第%d次进入循环,%d %d ",i,x,!x);
        printf("x为:%d  ",x=x-2);
-	   i++;
+       i++;
    }while(!(--x));  
 }
 程序的输出结果是：（c ）
