@@ -81,8 +81,8 @@ main(){
 main(){  
     int x=3,i=1;
     do{ 
-       printf("第%d次进入循环,%d %d ",i,x,!x);
-       printf("x为:%d  ",x=x-2);
+       printf("第%d次进入循环,%d %d   ",i,x,!x);
+       printf("x为:%d\n",x=x-2);
        i++;
    }while(!(--x));  
 }
