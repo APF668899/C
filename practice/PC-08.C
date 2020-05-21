@@ -8,7 +8,8 @@ printf(“x=%d”,x);
   b)  输出x=1
   c)  输出x=0
   d)  输出x=-1
-
+	  
+解析：
 #include "stdio.h"
 main(){
 	int x = -1;
@@ -24,11 +25,14 @@ main(){
 a)  x=2,y=0                 b)  x=1,y=0  
 c)  x=1,y=1                 d)  x=0,y=0
 
+解析：
+y = 1是赋值
+&& 运算：前面为0后面不做
 #include"stdio.h"
 main(){
 	int x,y;
 	for(x=0,y=0;(x<=1)&&(y=1);x++,y--){
-	    printf("x=%d,y=%d----",x,y);
+	    printf("x=%d,y=%d\n",x,y);
 	}	
     printf("最终x=%d,y=%d",x,y);
 }
@@ -42,6 +46,8 @@ main(){
 }
 程序的输出结果是：（ a）
   a)  0,5       b)  1,5       c)  0,4       d)   1,4
+
+	
 #include"stdio.h"
 main(){
     int x=0,y=0,i=1;
