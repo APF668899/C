@@ -1,0 +1,156 @@
+---
+title: C语言 
+---
+
+1.   有以下程序： 
+main()
+{  int m,n;
+   printf(“Enter m,n:”) ;  scanf(“%d%d”,&m,&n);
+   while(m!=n)  
+     {while(m>n)  m-=n;
+while(n>m)  n-=m;} 
+   printf(“m=%d\n”,m);
+}
+程序的输出结果是：（ ）
+a)  m=3      b)  m=2      c)  m=1      d)   m=0
+源码:
+#include"stdio.h"
+main(){
+    int m,n;
+    printf("Enter m,n:") ;
+    scanf("%d %d",&m,&n);
+    while(m!=n){
+        while(m>n) m-=n;
+    while(n>m) n-=m;
+    } 
+    printf("m=%d\n",m);
+}
+
+2.   有以下程序： 
+main()
+{  int i,s=1;
+   for(i=1 ;i<=50 ;i++)
+      if( !(i%5)&& !(i%3))  s+=i;  
+   printf(“%d\n”,s);
+}
+程序的输出结果是：（D ）
+a)  409       b)  277       c)  1         d)   91
+#include"stdio.h"
+main(){
+    int i,s=1;
+    for(i=1;i<=50 ;i++)
+       if( !(i%5)&& !(i%3)) s+=i; // 是5和3的倍数进入
+    printf("%d\n",s);
+}
+
+
+3.   有以下程序： 
+main()
+{  int x=0,y=0,i;
+   for(i=1 ; ;++i)
+   { if(i%2==0)  {x++ ;continue ;}
+if(i%5==0)  {y++ ;break ;}
+}  
+   printf(“%d,%d”,x,y);
+}
+程序的输出结果是：（A ）
+a)  2,1      b)  2,2      c)  2,5     d)   5,2
+#include"stdio.h"
+main(){
+    int x=0,y=0,i;
+    for(i=1 ; ;++i){ 
+        if(i%2==0){
+            x++ ;
+            continue;
+        }
+        if(i%5==0){
+            y++;
+            break;
+        }
+    }  
+    printf("%d,%d",x,y);
+}
+
+4.   有以下程序： 
+main()
+{  int i=0,a=0;
+   while(i<30)
+{for(;;)
+{if((i%10)==0)  break;
+else          i--;}
+i+=11;   a+=i;
+}
+   printf(“%d\n”,a);
+}
+程序的输出结果是：（B ）
+a)  66        b)  63       c)  33        d)   32
+#include"stdio.h"
+main(){
+    int i=0,a=0;
+    while(i<30){
+        for(;;){
+            printf("%d %d\n",i%10,(i%10)==0);
+            if((i%10)==0)  
+                break;
+            else
+                i--;
+        }
+        i+=11;//11,21,31
+        a+=i;//11,32,63
+    }
+    printf("最终%d\n",a);
+}
+
+5.   有以下程序： 
+main()
+{  int a,b;
+   for(a=1,b=1 ;a<=100 ;a++) 
+     { if(b>=10)  break;
+if(b%3==1)
+{ b+=3; continue; }
+} 
+   printf(“%d\n”,a);
+}
+程序的输出结果是：（D ）
+a)  101      b)  6        c)  5        d)   4
+源码:
+#include"stdio.h"
+main(){
+    int a,b;
+    for(a=1,b=1 ;a<=100 ;a++){
+        if(b>=10) 
+            break;
+        if(b%3==1){
+            b+=3;//4,7,10
+            printf("%d ",b);
+            continue; 
+        }
+    } 
+   printf("最终%d\n",a);
+}
+
+6.   有以下程序： 
+main()
+{  int i=0;
+   for(i+=3 ;i<=5 ;i=i+2) 
+     switch(i%5)
+      { case 0: printf(“*”);
+case 1: printf(“#”); break;
+default: printf(“!”); break;
+case 2: printf(“&”);
+}
+}
+程序的输出结果是：（C ）
+a)  *#       b)  !&      c)  !*#       d)   *#*
+源码:
+#include"stdio.h"
+main(){
+    int i=0;
+    for(i+=3 ;i<=5 ;i=i+2) 
+        switch(i%5){
+            case 0: printf("*");
+            case 1: printf("#"); break;
+            default: printf("!"); break;
+            case 2: printf("&");
+        }
+}
