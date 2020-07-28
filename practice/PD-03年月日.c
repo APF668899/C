@@ -75,10 +75,10 @@ main()
  int ye, mo, da, srdrq;
  int NewYear, women, duanwu, children, guoqing, guanggun, festival;
  //输入 输出
- printf("请输入年,月,日:");
+ printf("请输入今天的年,月,日:");
  scanf("%d,%d,%d", &year, &month, &days);
  day = Customize(month);	//进入void①计算今年已经过去多少天
- printf("请输入阳历节日:");
+ printf("请输入往后的阳历节日:");
  scanf("%d,%d,%d", &ye, &month, &da);
  if (month > 1 && year % 4 == 0)	//366天
  {
@@ -142,6 +142,6 @@ main()
   guanggun = Customize(11);
   guanggun = Festival(guanggun, day) + 12;
   printf("离双11还有%d天\n", guanggun);
- }
+ 
  return 0;
 }
