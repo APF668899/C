@@ -3,11 +3,9 @@
 #include <stdio.h>
 main(){  
 long int f,s;
-  int i,j,n; 
-   
+  int i,j,n;    
    【?】;  
-   scanf("%d",&n);   
-    
+   scanf("%d",&n);       
     for(i=1;i<=n; 【?】)   {    
       f=1;   
                              for(j=1; 【?】;j++)   
