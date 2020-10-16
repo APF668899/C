@@ -9,7 +9,6 @@ int main()
 	printf("\b请输入一个最大值:");
 	scanf("%d",&max);
 	srand(time(0));
-	if()
 	int number = rand()%1000;
 	int n = 0;
 	int a = 0;
