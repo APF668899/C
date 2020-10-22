@@ -1,9 +1,3 @@
----
-title: 2020-06-05未命名文件 
-tags: 新建,模板,小书匠
-renderNumberedHeading: true
-grammar_cjkRuby: true
----
 
 1.  以下程序的运行结果是-1
 #include"stdio.h"
