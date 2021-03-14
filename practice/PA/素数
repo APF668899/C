@@ -1,0 +1,27 @@
+#include <stdio.h>
+int isPrime(int num){
+  //两个较小数
+  if(num == 2 || num == 3 )
+      return 1 ;
+  //不在6的倍数两侧的一定不是质数
+  if(num%6 != 1 && num%6 != 5){
+      return 0 ;
+  }    
+  int tmp =num/2;
+  //在6的倍数两侧的也可能不是质数
+  for(int i = 5;i <= tmp; i+=6 )
+      if(num%i == 0 || num%(i+2) == 0)
+          return 0 ;                 
+  return 1;
+}
+
+int main(void) { 
+    int count=0,max=0;
+	for(int i=2;i<=10000;i++){
+	    if(isPrime(i)&&i>max){
+	        count++;
+	        max=i;
+	    }
+	}
+	printf("%d %d",count,max);
+}
